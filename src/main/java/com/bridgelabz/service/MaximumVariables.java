@@ -17,4 +17,12 @@ public class MaximumVariables {
         }
         return maximumVariable;
     }
+    public String searchMaximum(String[] variables) {
+        String maximumVariable = "";
+        for (String element : variables) {
+            if (element.compareTo(maximumVariable) > 0)
+                maximumVariable = element;
+        }
+        return maximumVariable;
+    }
 }
