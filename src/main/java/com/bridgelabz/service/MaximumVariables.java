@@ -1,7 +1,12 @@
 package com.bridgelabz.service;
 
 public class MaximumVariables {
-    public static void main(String[] args){
-        System.out.println("Find Maximum Problem Using Generics");
+    public Integer searchMaximum(Integer[] variables) {
+        int maximumVariable = 0;
+        for (Integer element : variables) {
+            if (element.compareTo(maximumVariable) > 0)
+                maximumVariable = element;
+        }
+        return maximumVariable;
     }
 }
