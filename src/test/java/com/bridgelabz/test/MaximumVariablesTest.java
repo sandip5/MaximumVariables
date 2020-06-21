@@ -11,4 +11,9 @@ public class MaximumVariablesTest {
         Integer[] variables = {123, 63, 92};
         Assert.assertEquals(maximumVariablesObject.searchMaximum(variables), variables[0]);
     }
+    @Test
+    public void givenNumber_AtSecondPosition_WhenMaximum_ShouldReturnTrue() {
+        Integer[] variables = {123, 180, 92};
+        Assert.assertEquals(maximumVariablesObject.searchMaximum(variables), variables[1]);
+    }
 }
