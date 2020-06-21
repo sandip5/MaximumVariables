@@ -9,4 +9,12 @@ public class MaximumVariables {
         }
         return maximumVariable;
     }
+    public Float searchMaximum(Float[] variables) {
+        Float maximumVariable = 0.0f;
+        for (Float element : variables) {
+            if (element.compareTo(maximumVariable) > 0)
+                maximumVariable = element;
+        }
+        return maximumVariable;
+    }
 }
