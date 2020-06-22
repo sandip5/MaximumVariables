@@ -7,6 +7,13 @@ public class MaximumVariables<T extends Comparable<T>> {
         T[] variables= elements;
         int length = variables.length;
         Arrays.sort(variables);
+        print(variables);
+        System.out.println(variables[length-1]);
         return variables[length - 1];
+    }
+    public static <T> void print(T[] inputArray){
+        for (T element : inputArray)
+            System.out.printf("%s ", element);
+        System.out.println();
     }
 }
